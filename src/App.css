@@ -4,10 +4,37 @@
 
 .navbar {
 	background-color: #f5f5f5;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.navbar-start {
+	margin-right: auto;
+	margin-left: 3rem;
+}
+
+.navbar-end {
+	margin-left: auto;
+	margin-right: none;
+}
+
+@media screen and (min-width: 1024px) {
+	.navbar-end {
+		margin-right: 3rem;
+	}
+}
+
+.navbar-item {
+	padding: 0.5rem 1.25rem;
 }
 
 .navbar-item img {
 	max-height: 5rem;
+}
+
+.navlink {
+	font-size: 1.1em;
+	font-weight: 500;
 }
 
 .logo {
@@ -15,8 +42,68 @@
 	width: auto;
 }
 
+.logo_name {
+	font: montserrat;
+	font-weight: 700;
+	font-size: 1.25rem;
+	padding-left: 1.15rem;
+}
+
 .Title {
 	font-family: "Montserrat Alternates", sans-serif;
+}
+
+.heroSection {
+	display: flex;
+	/* flex-direction: row; */
+	height: 75vh;
+	justify-content: space-between;
+}
+
+@media screen and (min-width: 1408px) {
+	.myContainer:not(.is-max-desktop):not(.is-max-widescreen) {
+		max-width: 1344px;
+		justify-content: space-between;
+	}
+}
+
+@media screen and (min-width: 1216px) {
+	.myContainer:not(.is-max-desktop) {
+		max-width: 1152px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.myContainer {
+		max-width: 960px;
+	}
+}
+
+.myContainer {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	margin: 0 auto;
+}
+
+.myHero {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logoHero {
+	display: flex;
+	height: 50%;
+	width: 50%;
+}
+.content {
+	display: flex;
+	max-width: 50%;
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: 500;
 }
 
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css";
