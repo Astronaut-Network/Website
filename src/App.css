@@ -4,8 +4,8 @@
 
 .navbar {
 	background-color: #f5f5f5;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+	/* padding-top: 0.25rem; */
+	/* padding-bottom: 0.25rem; */
 }
 
 .navbar-start {
@@ -56,14 +56,15 @@
 .heroSection {
 	display: flex;
 	/* flex-direction: row; */
-	height: 75vh;
+	height: 65vh;
 	justify-content: space-between;
 }
 
 @media screen and (min-width: 1408px) {
 	.myContainer:not(.is-max-desktop):not(.is-max-widescreen) {
 		max-width: 1344px;
-		justify-content: space-between;
+		/* justify-content: space-between; */
+		align-items: center;
 	}
 }
 
@@ -81,7 +82,7 @@
 
 .myContainer {
 	display: flex;
-	flex-direction: row;
+	/* flex-direction: row; */
 	width: auto;
 	margin: 0 auto;
 }
@@ -95,15 +96,34 @@
 
 .logoHero {
 	display: flex;
-	height: 50%;
-	width: 50%;
 }
+
+.spacelogo {
+	height: auto;
+	width: 1000px;
+}
+
 .content {
 	display: flex;
-	max-width: 50%;
+	flex-direction: column;
+	max-width: 75%;
 	color: #fff;
 	font-size: 1.2rem;
 	font-weight: 500;
+}
+
+.myTitle {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	color: #4af38a;
+	margin-bottom: 0.5rem !important;
+	font-size: 1.75rem;
+}
+
+.introtitle {
+	font-family: "Montserrat Alternates", sans-serif;
+	font-size: 2rem;
+	margin-bottom: 0.5rem !important;
 }
 
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css";
